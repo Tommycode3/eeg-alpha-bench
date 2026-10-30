@@ -25,8 +25,6 @@ validation run; see [Validation](#validation-on-public-data).*
 | Individual alpha frequency, mean ± sd | **10.15 ± 0.86 Hz** (n = 107 with a clear peak) |
 | Frontal (Fp) reactivity: *relative* vs *absolute* alpha, median | **3.18× vs 1.64×**: relative alpha overstates it ~2× |
 
-## Why I built this
-
 <!-- TODO(Tommaso): dictate 3-4 lines in your own words -->
 
 ## Contents
