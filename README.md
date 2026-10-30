@@ -103,7 +103,7 @@ So the verdict uses absolute alpha, requires $S$ and a spectral peak, excludes f
 - EO and EC are separate recordings, so anything else that changes between them (contact, posture, drowsiness) is confounded with eye state. $S$ removes broadband changes, not band-specific ones.
 - Fixed 8–12 Hz band. Subjects with IAF near 8 or 12 Hz lose part of their alpha.
 - No ocular correction (ICA or regression). Channels with unknown labels (e.g. `EXG0`) can't be recognised as frontal; rename them to 10-20 labels.
-- Validated on one wet-gel research dataset. That says nothing about any consumer or dry-electrode device; run the tool on that device.
+- Tested on one wet-gel research dataset. That says nothing about any consumer or dry-electrode device; run the tool on that device.
 - Artifact rejection is amplitude-based. It catches pops and saturation, not subtle EMG.
 
 ## References
