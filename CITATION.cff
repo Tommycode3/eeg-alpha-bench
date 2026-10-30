@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the PhysioNet EEGMMIDB dataset."
+title: "eeg-alpha-bench: a reproducible eyes-open / eyes-closed alpha (Berger effect) benchmark for EEG devices"
+abstract: >-
+  Python package and CLI that tests whether an EEG setup detects the Berger effect
+  (posterior alpha increase with eyes closed), returning PASS / FAIL / INCONCLUSIVE with
+  pre-registered thresholds. Validated on 109 subjects of the PhysioNet EEG Motor
+  Movement/Imagery Dataset.
+type: software
+authors:
+  - family-names: Maggiolo
+    given-names: Tommaso
+version: 0.1.0
+date-released: "2026-10-30"
+license: MIT
+repository-code: "https://github.com/Tommycode3/eeg-alpha-bench"
+keywords:
+  - EEG
+  - alpha rhythm
+  - Berger effect
+  - signal quality
+  - neurotechnology
+  - benchmark
+references:
+  - type: article
+    title: "BCI2000: A general-purpose brain-computer interface (BCI) system"
+    authors:
+      - family-names: Schalk
+        given-names: Gerwin
+      - family-names: McFarland
+        given-names: Dennis J.
+      - family-names: Hinterberger
+        given-names: Thilo
+      - family-names: Birbaumer
+        given-names: Niels
+      - family-names: Wolpaw
+        given-names: Jonathan R.
+    journal: "IEEE Transactions on Biomedical Engineering"
+    volume: 51
+    issue: 6
+    start: 1034
+    end: 1043
+    year: 2004

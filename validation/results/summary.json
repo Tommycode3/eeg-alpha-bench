@@ -1,0 +1,124 @@
+{
+  "alphabench_version": "0.1.0",
+  "dataset": "PhysioNet EEGMMIDB v1.0.0, runs R01 (EO) / R02 (EC)",
+  "n_subjects": 109,
+  "verdict_channels": [
+    "PO7",
+    "PO3",
+    "POz",
+    "PO4",
+    "PO8",
+    "O1",
+    "Oz",
+    "O2"
+  ],
+  "verdict_counts": {
+    "PASS": 90,
+    "INCONCLUSIVE": 14,
+    "FAIL": 5
+  },
+  "pass_rate": 0.8256880733944955,
+  "pass_rate_wilson95": [
+    0.7437300760682272,
+    0.8854712893154723
+  ],
+  "reactivity_abs_median": 3.38752191880114,
+  "reactivity_abs_iqr": [
+    1.9484572160820115,
+    10.58032129371976
+  ],
+  "frac_reactivity_gt_1": 0.9724770642201835,
+  "frac_reactivity_ge_threshold": 0.8532110091743119,
+  "wilcoxon_log_reactivity_gt_0": {
+    "statistic": 5983.0,
+    "p": 8.910317425626914e-20
+  },
+  "iaf_n_detected": 107,
+  "iaf_mean_hz": 10.152406171886335,
+  "iaf_sd_hz": 0.8604802102543743,
+  "iaf_range_hz": [
+    7.80619012638981,
+    12.439946913833964
+  ],
+  "iaf_cog_mean_hz": 10.069109440800947,
+  "iaf_cog_sd_hz": 0.7153212553236096,
+  "frontal": {
+    "reactivity_abs_median": 1.6355687908023717,
+    "reactivity_rel_median": 3.1837627560575017,
+    "low_ratio_eo_ec_median": 4.028568738772734
+  },
+  "posterior": {
+    "reactivity_rel_median": 2.1646967195509252,
+    "low_ratio_eo_ec_median": 1.024813127654636,
+    "specificity_median": 2.5076948340023373
+  },
+  "ablation_pass_rate": {
+    "all criteria": 0.8257,
+    "without p_bonferroni": 0.9358,
+    "without reactivity": 0.8257,
+    "without specificity": 0.8349,
+    "without cliffs_delta": 0.8257,
+    "without alpha_peak": 0.8257
+  },
+  "config": {
+    "line_freq": 60.0,
+    "notch_q": 30.0,
+    "l_freq": 1.0,
+    "h_freq": 40.0,
+    "filter_order": 4,
+    "edge_s": 1.0,
+    "epoch_s": 4.0,
+    "reject_ptp_uv": 1000.0,
+    "reject_z": 3.5,
+    "flat_ptp_uv": 1.0,
+    "welch_s": 2.0,
+    "alpha_band": [
+      8.0,
+      12.0
+    ],
+    "total_band": [
+      1.0,
+      40.0
+    ],
+    "low_band": [
+      1.0,
+      4.0
+    ],
+    "flank_bands": [
+      [
+        4.0,
+        7.0
+      ],
+      [
+        14.0,
+        30.0
+      ]
+    ],
+    "iaf_search": [
+      7.0,
+      13.0
+    ],
+    "aperiodic_ranges": [
+      [
+        2.0,
+        7.0
+      ],
+      [
+        14.0,
+        30.0
+      ]
+    ],
+    "n_permutations": 5000,
+    "seed": 0,
+    "min_epochs": 10,
+    "alpha_level": 0.01,
+    "min_reactivity": 1.5,
+    "min_specificity": 1.3,
+    "min_cliffs_delta": 0.33,
+    "min_peak_db": 1.0,
+    "nominal_p": 0.05,
+    "nominal_reactivity": 1.2,
+    "eog_low_ratio": 2.0
+  },
+  "n_errors": 0
+}
